@@ -1011,7 +1011,7 @@ const embed  = new Discord.MessageEmbed()
  .setAuthor(msg.author.tag)
  .setTitle("Thankyou for using help command.")
  .setColor("RED")
- .setDescription("Click on any of the category given below to view its commands.\n **Note**- Use 'nh!' as prefix and all the commands are case sensitive")
+ .setDescription("Click on any of the category given below to view its commands.\n **Note**- Use '!' as prefix and all the commands are case sensitive")
  
  const button1 = new disbut.MessageButton()
         .setStyle('green')
