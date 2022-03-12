@@ -55,7 +55,7 @@ bot.on('ready', () => {
     
     console.log(`Bot is now online and serving in ${servers} servers`)
     //This will display "Playing in <servers> servers!"
-    bot.user.setActivity(` nh!help`, {
+    bot.user.setActivity(` !help`, {
         type: 'PLAYING',
     })
 });
@@ -101,7 +101,7 @@ if(button.id === "button1") {
   const embed1 = new Discord.MessageEmbed()
    .setTitle("😆Fun Commands")
    .setColor("#B3346C")
-   .setDescription("`ping              - Shows if bot is online or not `,\n`google[content]   - fetch 9-10top results from google e.g. nh!google alan\n                     walker songs, true`,\n`say               - Whatever you ask it  `, \n `roast[@user]      - Roasts a user`,\n`howgay            - sends how much you are gay`,\n `8ball             - Starts 8ball`,\n`meme              - shows you random meme`\n`server            - shows server info`,\n`info              - Shows info of user`,\n`quote             - Sends a random quote`,\n`weather[cityname] - shows weather of a city e.g. zyn-weather london, true`,\n `avatar            - Shows you the avatar`,\n`ranime            - Sends random anime image`,\n`fakevirus         - Send a virus to mentioned user`")
+   .setDescription("`ping              - Shows if bot is online or not `,\n`google[content]   - fetch 9-10top results from google e.g. !google alan\n                     walker songs, true`,\n`say               - Whatever you ask it  `, \n `roast[@user]      - Roasts a user`,\n `8ball             - Starts 8ball`,\n`meme              - shows you random meme`\n`server            - shows server info`,\n`info              - Shows info of user`,\n`quote             - Sends a random quote`,\n`weather[cityname] - shows weather of a city e.g. !weather london, true`,\n `avatar            - Shows you the avatar`,\n`fakevirus         - Send a virus to mentioned user`")
  message.edit({embed: embed1})
 }
 else if ( button.id === "button2") {
@@ -627,20 +627,8 @@ if(member){
 
 
   
- else if (command === "invite") {
-    let button = new disbut.MessageButton()
-    .setStyle('url')
-  .setURL('https://top.gg/bot/875708218213560380') 
-  .setLabel('Invite!'); 
-    msg.channel.send('Thankyou for using invite command', button);
-  }
-else if (command === "vote") {
-let button = new disbut.MessageButton()
-    .setStyle('url')
-  .setURL('https://top.gg/bot/875708218213560380/vote') 
-  .setLabel('Vote me!'); 
-    msg.channel.send('Thankyou for voting me!', button);
-  }
+ 
+
  else if (command === "cointoss") {
     msg.channel.send(coinToss())
   }
