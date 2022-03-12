@@ -55,10 +55,7 @@ bot.on('ready', () => {
     
     console.log(`Bot is now online and serving in ${servers} servers`)
     //This will display "Playing in <servers> servers!"
-    bot.user.setActivity(` !help`, {
-        type: 'PLAYING',
-	    
-    })
+
 	bot.user.setActivity(` ${servers} servers and ${users} users` , {
 		type: 'WATCHIN' ,
 	})
