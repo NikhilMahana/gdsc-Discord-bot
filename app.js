@@ -399,7 +399,7 @@ const randomImage = imagesBlush[Math.floor(Math.random() * imagesBlush.length)];
             .setTimestamp()
             msg.channel.send(embed);
         } else {
-            msg.channel.send('❌ | On whom you are blushing at <:TomStare:853276994350350377>');
+            msg.channel.send('❌ | On whom you are blushing at <:wot:940466570336043068>');
         }
     }
 else if ( command === "pout") {
@@ -422,7 +422,7 @@ const imagesPout = [
         const randomImage = imagesPout[Math.floor(Math.random() * imagesPout.length)];
         if(member){
             let embed = new Discord.MessageEmbed()
-            .setTitle(`${msg.author.username} seems to pouts at ${member.username} 🥺`)
+            .setTitle(`${msg.author.username} seems to pouts at ${member.username} <:cry:913821195487576064>`)
             .setColor('#f582ae')
             .setImage(randomImage)
             .setTimestamp()
@@ -459,7 +459,7 @@ let member = msg.mentions.users.first();
 const randomImage = imagesPat[Math.floor(Math.random() * imagesPat.length)];
  if(member){
             let embed = new Discord.MessageEmbed()
-            .setTitle(`Aww ${msg.author.username} patted ${member.username}! 😚`)
+            .setTitle(`Aww ${msg.author.username} patted ${member.username}! <a:dd_love:914496702952644638>`)
             .setColor('#8a2be2')
             .setImage(randomImage)
             .setTimestamp()
@@ -539,7 +539,7 @@ const imagesKiss = [
 const randomImage = imagesKiss[Math.floor(Math.random() * imagesKiss.length)];
         if(member){
             let embed = new Discord.MessageEmbed()
-            .setTitle(`${msg.author.username} kissed ${member.username}! 😍`)
+            .setTitle(`${msg.author.username} kissed ${member.username}! <a:YeloKissies:914497710231539823>`)
             .setColor('#8E44AD')
             .setImage(randomImage)
             .setTimestamp()
