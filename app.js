@@ -57,7 +57,7 @@ bot.on('ready', () => {
     //This will display "Playing in <servers> servers!"
 
 	bot.user.setActivity(` ${servers} servers and ${users} users` , {
-		type: 'WATCHIN' ,
+		type: 'WATCHING' ,
 	})
 });
 
