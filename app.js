@@ -643,18 +643,18 @@ if(member){
    .setTitle(`Server Information - ${msg.guild.name}`)
         .setThumbnail(msg.guild.iconURL())
         .setColor('#117791')
-        .addField("📂 General Information", [
+        .addField("<a:flame:914448780122783754> General Information", [
             `• **Name**: ${msg.guild.name}`,
             `• **Server ID**: ${msg.guild.id}`,
             `• **Owner**: <@${msg.guild.ownerID}>`,
             `• **Server Created**: ${moment(msg.guild.createdTimestamp).format('LL LTS')}`, 
         ])
-        .addField('📂 Member Information',[
+        .addField('<a:flame:914448780122783754> Member Information',[
             `• **Users**: ${msg.guild.memberCount}`,
             `• **Bots**: ${members.filter(m => m.user.bot).size}`,
         ])
 
-        .addField('📂 Channel Information', [
+        .addField('<a:flame:914448780122783754> Channel Information', [
             `• **Channels**: ${msg.guild.channels.cache.size}`,
             `• **Text Channels**: ${channels.filter(ch => ch.type === "text").size}`,
             `• **Voice Channels**: ${channels.filter(ch => ch.type === "voice").size}`,
@@ -670,7 +670,7 @@ else if ( command === "info" ){
         .setTitle(`User Information - ${user.username}`)
         .setThumbnail(user.displayAvatarURL({ dynamic: true }))
         .setColor('#660077')
-        .addField(":busts_in_silhouette: Informations", [
+        .addField("<a:loading:914450825458380810> Informations", [
             `• **Name**: ${user.tag}`,
             `• **User ID**: ${user.id}`,
             `• **Nickname**: ${member.nickname || 'None'}`,
@@ -746,7 +746,7 @@ else if ( command === "ban") {
             console.log(err)
         })
   let banembed = new Discord.MessageEmbed()
-        .setTitle('🅱 Member banned')
+        .setTitle('<a:ban:914445759091453992> Member banned')
         .setThumbnail(member.user.displayAvatarURL())
         .addField('User Banned', member)
         .addField('Kicked by', msg.author)
@@ -786,7 +786,7 @@ let reason = args.slice(1).join(" ");
             console.log(err)
         })
 let kickembed = new Discord.MessageEmbed()
-        .setTitle('🦵 Member kicked')
+        .setTitle('<:fired:914445759229866015> Member kicked')
         .setThumbnail(member.user.displayAvatarURL())
         .addField('User Kicked', member)
         .addField('Kicked by', msg.author)
@@ -826,7 +826,7 @@ channel
  .updateOverwrite(channel.guild.roles.everyone, { VIEW_CHANNEL: false })
  .then(() => {
   const msgEmbed = new Discord.MessageEmbed()
-   .setDescription(`✅ The channel\`${channel.name}\` has been set to private.`)
+   .setDescription(`<a:tick:914447808843644948> The channel\`${channel.name}\` has been set to private.`)
    .setColor('GREEN');
   msg.channel.send(msgEmbed);
  })
@@ -1255,7 +1255,7 @@ let reply = new Discord.MessageEmbed()
 }
 else if ( command === "google" || command === "g") {
 const embed = new Discord.MessageEmbed()
-        .setTitle("Here are some search results.")
+        .setTitle("<a:google:914452617915138058> Here are some search results. <a:google:914452617915138058>")
         .setColor("#000000")
         .setTimestamp()
 googleIt({'query': args.join(' ')}).then(results => {
