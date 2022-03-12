@@ -118,13 +118,7 @@ else if ( button.id === "button3") {
     .setDescription("`kick              - kicks the user from server`,\n `ban               - bans a user from server`,\n `purge             - clears the given amount of messages`,\n `private[#channel] - make channel private`,\n `lock              - locks a channel e.g. zyn-lock[#channel], true`,\n `unlock            - unlocks the channel`")
     message.edit({embed:embed3})
 }
-else if ( button.id === "button4") {
-const embed4 = new Discord.MessageEmbed()
-         .setTitle("🔧Utility")
-         .setColor("#B3346C")
-         .setDescription("`invite            - invite the bot to your server`,\n`vote              - Upvote the bot to get a reward`,\n`aliases           - Shows the alias of commands`")
-message.edit({embed:embed4})
-}
+
 
 else if (button.id === "normal") {
 const quotes = [
@@ -1026,13 +1020,9 @@ const embed  = new Discord.MessageEmbed()
       .setStyle('green')
         .setLabel("Moderation")
         .setID("button3")
- const button4 = new disbut.MessageButton()
-      .setStyle('green')
-        .setLabel("Utility")
-        .setID("button4")
  
  let row = new disbut.MessageActionRow()
-  .addComponents(button1, button2, button3, button4);
+  .addComponents(button1, button2, button3);
 msg.channel.send(null, {embed: embed , components: [row]}).then(msg => {
                     setTimeout(function() {
                         msg.edit(null, { embed: embed , components:[]})
