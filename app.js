@@ -51,7 +51,7 @@ bot.on('ready', () => {
   
   console.log('Zyn initialized!');
   const servers =  bot.guilds.cache.size
-    const users =  bot.users.cache.size
+    const users =  bot.guilds.users.cache.size
     
     console.log(`Bot is now online and serving in ${servers} servers`)
     //This will display "Playing in <servers> servers!"
