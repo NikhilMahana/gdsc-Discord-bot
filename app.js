@@ -56,8 +56,8 @@ bot.on('ready', () => {
     console.log(`Bot is now online and serving in ${servers} servers`)
     //This will display "Playing in <servers> servers!"
 
-	bot.user.setActivity(` ${servers} servers and ${users} users` , {
-		type: 'WATCHING' ,
+	bot.user.setActivity(`+help` , {
+		type: 'PLAYING' ,
 	})
 });
 
@@ -948,7 +948,7 @@ const embed  = new Discord.MessageEmbed()
  .setAuthor(msg.author.tag)
  .setTitle("Thankyou for using help command.")
  .setColor("RED")
- .setDescription("Click on any of the category given below to view its commands.\n **Note**- Use '!' as prefix and all the commands are case sensitive")
+ .setDescription("Click on any of the category given below to view its commands.\n **Note**- Use '+' as prefix and all the commands are case sensitive")
  
  const button1 = new disbut.MessageButton()
         .setStyle('green')
