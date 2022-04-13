@@ -102,7 +102,7 @@ if(button.id === "button1") {
   const embed1 = new Discord.MessageEmbed()
    .setTitle("😆Fun Commands")
    .setColor("#B3346C")
-   .setDescription("`ping              - Shows if bot is online or not `,\n`google[content]   - fetch 9-10top results from google e.g. !google alan\n                     walker songs, true`,\n`say               - Whatever you ask it  `, \n `roast[@user]      - Roasts a user`,\n `8ball             - Starts 8ball`,\n`meme              - shows you random meme`\n`server            - shows server info`,\n`info              - Shows info of user`,\n`quote             - Sends a random quote`,\n`weather[cityname] - shows weather of a city e.g. !weather london, true`,\n `avatar            - Shows you the avatar`,\n`fakevirus         - Send a virus to mentioned user`")
+   .setDescription("`ping              - Shows if bot is online or not `,\n`google[content]   - fetch 9-10top results from google e.g. !google alan\n                     walker songs, true`,\n`say               - Whatever you ask it  `,\n `8ball             - Starts 8ball`,\n`meme              - shows you random meme`\n`server            - shows server info`,\n`info              - Shows info of user`,\n`quote             - Sends a random quote`,\n`weather[cityname] - shows weather of a city e.g. !weather london, true`,\n `avatar            - Shows you the avatar`,\n`fakevirus         - Send a virus to mentioned user`")
  message.edit({embed: embed1})
 }
 
