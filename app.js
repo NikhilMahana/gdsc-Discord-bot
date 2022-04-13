@@ -957,15 +957,11 @@ const embed  = new Discord.MessageEmbed()
         
  const button2 = new disbut.MessageButton()
       .setStyle('green')
-        .setLabel("Action")
-        .setID("button2") 
- const button3 = new disbut.MessageButton()
-      .setStyle('green')
         .setLabel("Moderation")
-        .setID("button3")
+        .setID("button2")
  
  let row = new disbut.MessageActionRow()
-  .addComponents(button1, button2, button3);
+  .addComponents(button1, button2);
 msg.channel.send(null, {embed: embed , components: [row]}).then(msg => {
                     setTimeout(function() {
                         msg.edit(null, { embed: embed , components:[]})
