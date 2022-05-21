@@ -1,9 +1,9 @@
 {
   "name": "mybot",
   "version": "1.0.0",
-  "description": "My First Discord Bot",
+  "description": "GDSC LPU Discord Moderation Bot",
   "main": "app.js",
-  "author": "Vagisha Gupta",
+  "author": "Nikhil Mahana",
   "dependencies": {
     "axios": "^0.21.1",
     "buttons": "^0.1.2",
