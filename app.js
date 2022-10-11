@@ -10,9 +10,8 @@ const bot = new Discord.Client();
 const axios = require('axios')
 const {  MessageEmbed} =  require("discord.js");
 
-
+require("dotenv").config();
 const fetch = require("node-fetch");
-const dotenv = require("dotenv");
 const  ms    = require("ms");
 const googleIt = require('google-it')
 const smartestchatbot = require('smartestchatbot')
@@ -41,7 +40,6 @@ const format = require(`humanize-duration`);
 const map = new Discord.Collection();
 
 const fs = require ("fs");
-dotenv.config();
 
 const config = require("./auth.json")
 const {prefix} = require("./auth.json")
@@ -917,7 +915,7 @@ let member = msg.mentions.users.first();
                 .setFooter('Enjoy!!');
         axios
             .get(
-                `https://api.openweathermap.org/data/2.5/weather?q=${args}&units=metric&appid=${config.apitoken}`
+                `https://api.openweathermap.org/data/2.5/weather?q=${args}&units=metric&appid=${process.env.API_TOKEN}`
             )
             .then(response => {
                 let apiData = response;
@@ -1220,4 +1218,4 @@ else if (command === "fakevirus" || command === "fv") {
 
 
 
-bot.login(config.token);
+bot.login(process.env.TOKEN);
