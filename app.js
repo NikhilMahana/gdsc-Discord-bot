@@ -12,6 +12,7 @@ const {  MessageEmbed} =  require("discord.js");
 
 require("dotenv").config();
 const fetch = require("node-fetch");
+const dotenv = require("dotenv");
 const  ms    = require("ms");
 const googleIt = require('google-it')
 const smartestchatbot = require('smartestchatbot')
