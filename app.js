@@ -10,8 +10,9 @@ const bot = new Discord.Client();
 const axios = require('axios')
 const {  MessageEmbed} =  require("discord.js");
 
-require('dotenv').config();
+require("dotenv").config();
 const fetch = require("node-fetch");
+const dotenv = require("dotenv");
 const  ms    = require("ms");
 const googleIt = require('google-it')
 const smartestchatbot = require('smartestchatbot')
@@ -40,7 +41,6 @@ const format = require(`humanize-duration`);
 const map = new Discord.Collection();
 
 const fs = require ("fs");
-dotenv.config();
 
 const config = require("./auth.json")
 const {prefix} = require("./auth.json")
@@ -1027,7 +1027,7 @@ let row = new disbut.MessageActionRow()
 
 else if (command === "meme") {
     const embed = new Discord.MessageEmbed();
-	got('https://www.reddit.com/r/memes/random/.json')
+	got('https://www.reddit.com/r/programmingmemes/.json')
 		.then(response => {
 			const [list] = JSON.parse(response.body);
 			const [post] = list.data.children;
