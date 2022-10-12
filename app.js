@@ -1027,7 +1027,7 @@ let row = new disbut.MessageActionRow()
 
 else if (command === "meme") {
     const embed = new Discord.MessageEmbed();
-	got('https://www.reddit.com/r/memes/random/.json')
+	got('https://www.reddit.com/r/programmingmemes/.json')
 		.then(response => {
 			const [list] = JSON.parse(response.body);
 			const [post] = list.data.children;
